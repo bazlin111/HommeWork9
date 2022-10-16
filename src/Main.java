@@ -20,13 +20,22 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println(" ЗАДАЧА № 2 ");
-        System.out.printf("Минимальная сумма трат за день составила %d рублей.\n", arr[0]);
-        System.out.printf("Максимальная сумма трат за день составила %d рублей.\n", arr[arr.length - 1]);
+        int min = arr[0];
+        int max = arr[0];
+        for (int element : arr) {
+            if (element < min) {
+                min = element;
+            } else if (element > max) {
+                max = element;
+            }
+        }
+        System.out.println(" минимальные траты в месяц  " + min);
+        System.out.println(" максимальные траты в месяц  " + max);
 
         System.out.println();
         System.out.println("ЗАДАЧА № 3 ");
 
-        double average = summa / arr.length - 1;
+        double average = summa / 30;
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей\n", average);
 
         System.out.println();
