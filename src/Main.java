@@ -35,7 +35,7 @@ public class Main {
         System.out.println();
         System.out.println("ЗАДАЧА № 3 ");
 
-        double average = summa / 30;
+        double average = summa / arr.length;
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей\n", average);
 
         System.out.println();
